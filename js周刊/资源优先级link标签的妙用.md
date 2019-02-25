@@ -1,4 +1,4 @@
-#### <link>标签的妙用：
+#### <link>标签的妙用：[原文链接](https://developers.google.com/web/fundamentals/performance/resource-prioritization#_1)
 **==预加载:==**
 **\<link rel="preload"> 告知浏览器当前导航需要某个资源，应尽快开始提取；是强制浏览器执行的指令；与我们将探讨的其他资源提示不同，它是浏览器必须执行的指令，而不只是可选提示。**
 **==允许您继续利用单个文件版本控制和缓存的优势，同时为您提供尽快请求资源的机制。==**
