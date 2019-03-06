@@ -10,3 +10,6 @@
 6   |   Emojis  |   https://github.com/WebpageFX/emoji-cheat-sheet.com  |   http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/    |   支持网页中生成自己满意的表情包括url
 7   |   anime.js    |   https://github.com/juliangarnier/anime   |   https://codepen.io/collection/XLebem/    |   是一个轻量级JavaScript动画库，具有简单但功能强大的API、它适用于CSS属性，SVG，DOM属性和JavaScript对象
 8   |   animate.css |   https://github.com/daneden/animate.css  |   https://daneden.github.io/animate.css/  |   animate.css是一组很酷，有趣，跨浏览器的动画,专门为动画而生的
+9   |   hotkey  |   https://github.com/github/hotkey    |   null    |   键盘行为。在键盘上按下一个键或一系列键时，触发对目标元素的操作。
+10  |   redom   |   https://github.com/redom/redom  |   https://redom.js.org/   |   DOM是Juha Lindstedt和贡献者的一个小型（2 KB）DOM库，它添加了有用的帮助程序来创建DOM元素并使它们与数据保持同步
+11  |   flexsearch  |   https://github.com/nextapps-de/flexsearch   |   https://raw.githack.com/nextapps-de/flexsearch/master/demo/autocomplete.html    |   Web最快且最具内存灵活性的**全文搜索库**，具有零依赖性。支持浏览器和 Node.js。
