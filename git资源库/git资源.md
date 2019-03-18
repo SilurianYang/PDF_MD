@@ -19,3 +19,5 @@
 15  |   instant.page    |   https://github.com/instantpage/instant.page |   https://instant.page/   |   1 分钟时间改动，让你的网站的页面“瞬时”加载
 16  |   Fuse.js |   https://github.com/krisk/fuse   |   https://fusejs.io/  |   JavaScript中的 **轻量级模糊搜索**
 17  |   mercury-parser  |   https://github.com/postlight/mercury-parser |   https://github.com/postlight/mercury-parser/tree/master/src/extractors/custom   |   从网页中提取有用的部分，例如内容，标题，作者，发布日期，摘录，主要图像等
+18  |   howler.js   |   https://github.com/goldfire/howler.js#documentation |   https://howlerjs.com/   |   一个适用于所有平台**音频**需求的简单 API。无依赖关系
+19  |   handtracking    |   https://github.com/victordibia/handtracking |   https://victordibia.github.io/handtrack.js/#/video |   运行在浏览器中的神经网络（SSD）**实时手动检测**。
