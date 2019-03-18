@@ -13,3 +13,9 @@
 9   |   hotkey  |   https://github.com/github/hotkey    |   null    |   键盘行为。在键盘上按下一个键或一系列键时，触发对目标元素的操作。
 10  |   redom   |   https://github.com/redom/redom  |   https://redom.js.org/   |   DOM是Juha Lindstedt和贡献者的一个小型（2 KB）DOM库，它添加了有用的帮助程序来创建DOM元素并使它们与数据保持同步
 11  |   flexsearch  |   https://github.com/nextapps-de/flexsearch   |   https://raw.githack.com/nextapps-de/flexsearch/master/demo/autocomplete.html    |   Web最快且最具内存灵活性的**全文搜索库**，具有零依赖性。支持浏览器和 Node.js。
+12  |   finance.js  |   https://github.com/ebradyjobory/finance.js  |   null    |   用于财务计算的JavaScript库。
+13  |   x-spreadsheet   |   https://github.com/myliang/x-spreadsheet    |   https://myliang.github.io/x-spreadsheet/    |   JS 和 Canvas 驱动的电子表格控件
+14  |   timetable-fns   |   https://github.com/flightplan-tool/timetable-fns    |   null    |   快速计算日期和时间的工具函数
+15  |   instant.page    |   https://github.com/instantpage/instant.page |   https://instant.page/   |   1 分钟时间改动，让你的网站的页面“瞬时”加载
+16  |   Fuse.js |   https://github.com/krisk/fuse   |   https://fusejs.io/  |   JavaScript中的 **轻量级模糊搜索**
+17  |   mercury-parser  |   https://github.com/postlight/mercury-parser |   https://github.com/postlight/mercury-parser/tree/master/src/extractors/custom   |   从网页中提取有用的部分，例如内容，标题，作者，发布日期，摘录，主要图像等
