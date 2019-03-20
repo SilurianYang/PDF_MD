@@ -1,0 +1,7 @@
+{
+	"update.html": {
+		"refer": [
+			"login.html"
+		]
+	}
+}
