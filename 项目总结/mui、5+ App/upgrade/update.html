@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<script src="html5plus://ready"></script>
+		<script src="js/base.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="https://cdn.bootcss.com/vue/2.6.9/vue.min.js"></script>
+		<style type="text/css">
+			.mui-content img {
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.welcome {
+				width: 10rem;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 18rem;
+				margin-top: 3rem;
+				margin-bottom: 3.81rem;
+			}
+			
+			.logo {
+				width: 6.78rem;
+				height: 6.78rem;
+			}
+			
+			.Slogen {
+				width: 12.968rem;
+				height: 5.75rem;
+			}
+			
+			#bottom_progressbar {
+				position: fixed;
+				width: 84%;
+				left: 50%;
+				margin-left: -44%;
+				bottom: 30px;
+			}
+			
+			.mui-progressbar {
+				height: .375rem;
+				background-color: #F8DBDF;
+				border-radius: 4px;
+			}
+			
+			.mui-progressbar span {
+				background-color: #D62039;
+				border-radius: 4px;
+			}
+			
+			.progressbar_text {
+				margin-bottom: 5px;
+				text-align: center;
+				color: rgba(0, 0, 0, 0.5);
+				font-size: .875rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="root">
+			<div class="mui-content">
+				<div id="bottom_progressbar">
+					<p class="progressbar_text">{{text}}…</p>
+					<div id="mui-progressbar" class="mui-progressbar">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/update.js"></script>
+	</body>
+
+</html>

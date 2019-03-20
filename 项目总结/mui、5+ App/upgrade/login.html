@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<h1>不升级你看不到update页面哦，是不是只看到了login页面？</h1>
+		<img src="images/201.gif"/>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			if(mui.os.android) {
+				mui.plusReady(function() {
+					var old_back = mui.back;
+					var first = null;
+					mui.back = function() {
+						if(!first) {
+							first = new Date().getTime();
+							mui.toast('再按一次退出应用');
+							setTimeout(function() {
+								first = null;
+							}, 2000);
+						} else {
+							if(new Date().getTime() - first < 2000) {
+								plus.runtime.quit();
+							}
+						}
+					}
+					plus.navigator.closeSplashscreen();
+					plus.webview.currentWebview().addEventListener('show', () => {
+						plus.navigator.setFullscreen(false);
+					plus.webview.getLaunchWebview().close('none', 0)
+				})
+				})
+			}
+		</script>
+	</body>
+
+</html>
