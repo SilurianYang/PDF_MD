@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FF0000",
+    "backgroundColor": "#FF0000"
+  },
+  "usingComponents": {}
+}
