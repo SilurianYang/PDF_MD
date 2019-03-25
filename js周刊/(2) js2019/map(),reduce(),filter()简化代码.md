@@ -127,9 +127,81 @@
                         // 85 William 34 editor
                         // 97 Oliver 28 editor
 ```
+
 #### (十一) 数组的交集值
+
 ```javaScript {.line-numbers}
     const arrA = [1, 4, 3, 2];
     const arrB = [5, 2, 6, 7, 1];
     arrA.filter(it => arrB.includes(it)); // returns [1, 2]
+```
+
+#### (十二) 排除对象中的某个值
+
+```javaScript {.line-numbers}
+    const noPassword = ({
+        password,
+        ...rest
+    }) => rest
+    const user = {
+        id: 100,
+        name: 'hhyang',
+        password: 'Password!'
+    }
+    noPassword(user)        //{id: 100, name: "hhyang"}
+```
+
+#### (十三) 动态排除对象中的某个值
+
+```javaScript {.line-numbers}
+    const user = {
+        id: 100,
+        name: 'hhyang',
+        password: 'Password!'
+    }
+
+    const removeProperty = prop => ({ [prop]: _, ...rest }) => rest
+    
+    const removePassword = removeProperty('password')
+    const removeId = removeProperty('id')
+    
+    console.log( removePassword(user)) //{id: 100, name: "hhyang"}
+    console.log( removeId(user))   //{name: "hhyang", password: "Password!"}
+```
+#### (十四) 改变对象中默认排序，让某一项置顶或置底
+
+```javaScript {.line-numbers}
+    const user = {
+        name: 'hhyang',
+        password: 'Password!',
+        id: 100
+    }
+    const organize = object => ({name: undefined,...object});
+    console.log(organize(user))     //{name: "hhyang", password: "Password!", id: 100}
+```
+#### (十五) 动态改变对象的某个key
+
+```javaScript {.line-numbers}
+    const user = {
+        name: 'hhyang',
+        password: 'Password!',
+        ID: 100
+    }
+    const renamed = ({ ID, ...object }) => ({ id: ID, ...object })
+    console.log(renamed(user))  //main.js:7 {id: 100, name: "hhyang", password: "Password!"}
+```
+#### (十六) 对象中添加属性有值的
+
+```javaScript {.line-numbers}
+    const user = {
+        name: 'hhyang',
+        ID: 100
+    }
+    let  password='ispassword';
+    const userWithPassword = {
+        ...user,
+        id: 100,
+        ...(password && { password })
+    }
+    console.log(userWithPassword) //{name: "hhyang", ID: 100, id: 100, password: "ispassword"}
 ```
