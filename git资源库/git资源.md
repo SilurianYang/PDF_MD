@@ -23,3 +23,4 @@
 19  |   handtracking    |   https://github.com/victordibia/handtracking |   https://victordibia.github.io/handtrack.js/#/video |   运行在浏览器中的神经网络（SSD）**实时手动检测**。
 20  |   billboard.js    |   https://github.com/naver/billboard.js   |   https://naver.github.io/billboard.js/   |   基于D3 v4 +的可重用，**简单的界面JavaScript图表库**
 21  |   Mosaic  |   https://github.com/Authman2/Mosaic  |   null    |   用于构建用户界面的前端JavaScript库，类似vue写法兼容ie8。仅20k不到
+22  |   brain.js    |   https://github.com/BrainJS/brain.js |   https://brain.js.org/   |   JavaScript中的神经网络 机器人卷神经网络
