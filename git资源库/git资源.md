@@ -24,3 +24,4 @@
 20  |   billboard.js    |   https://github.com/naver/billboard.js   |   https://naver.github.io/billboard.js/   |   基于D3 v4 +的可重用，**简单的界面JavaScript图表库**
 21  |   Mosaic  |   https://github.com/Authman2/Mosaic  |   null    |   用于构建用户界面的前端JavaScript库，类似vue写法兼容ie8。仅20k不到
 22  |   brain.js    |   https://github.com/BrainJS/brain.js |   https://brain.js.org/   |   JavaScript中的神经网络 机器人卷神经网络
+23  |   tui.calendar    |   https://github.com/nhnent/tui.calendar  |   https://ui.toast.com/tui-calendar/  |   这是一个高度可定制的 JavaScript 日历小部件，支持多种视图类型（周、月等），可以拖动和调整每个日程项目，基本上就像你自己的 Google 日历一样
