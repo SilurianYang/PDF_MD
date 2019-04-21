@@ -28,3 +28,10 @@
 24  |   xterm.js    |   https://github.com/xtermjs/xterm.js |   https://xtermjs.org/    |   前端的终端组件
 25  |   Tone.js |   https://github.com/Tonejs/Tone.js   |   https://tonejs.github.io/demos  |   Tone.js是一个Web Audio框架，用于在浏览器中创建交互式音乐
 26  |   spacetime   |   https://github.com/spencermountain/spacetime    |   http://spacetime.how/   |   一个轻量级的javascript时区库
+27  |   lax.js  |   https://github.com/alexfoxy/laxxx   |   https://alexfox.dev/laxxx/  |   一个简单轻巧（精简和压缩后 2kb 大小）的插件，可在滚动时创建流畅的动画
+28  |   trading-vue-js   |   https://github.com/C451/trading-vue-js |   https://c451.github.io/trading-vue-demo/    |   一个用于交易、灵活的 hackable(极客) 图表库
+29  |   majestic    |   https://github.com/Raathigesh/majestic/ |   null    |   用于 Jest 的零配置 GUI,有趣的工具，可以帮助你轻松地进行 JavaScript 测试  
+30  |   Tone.js |   https://github.com/Tonejs/Tone.js   |   https://tonejs.github.io/demos  |   用于在浏览器中制作交互式音乐的Web Audio框架
+31  |   eslint-plugin-unicorn   |   https://github.com/sindresorhus/eslint-plugin-unicorn   |   null    |   各种极致的 ESLint 规则
+32  |   cube.js |   https://github.com/statsbotco/cube.js   |   https://cube.dev/   |   开源分析框架,用于构建内部 BI 工具或客户仪表板等内容
+33  |   react-loadcon   |   https://github.com/foreseaz/react-loadcon   |   https://foreseaz.github.io/react-loadcon/   |   React组件来操作favicon，用于加载或进度显示在标题栏上
