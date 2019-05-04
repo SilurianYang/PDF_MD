@@ -36,3 +36,7 @@
 32  |   cube.js |   https://github.com/statsbotco/cube.js   |   https://cube.dev/   |   开源分析框架,用于构建内部 BI 工具或客户仪表板等内容
 33  |   react-loadcon   |   https://github.com/foreseaz/react-loadcon   |   https://foreseaz.github.io/react-loadcon/   |   React组件来操作favicon，用于加载或进度显示在标题栏上
 34  |   vuelidate   |   https://github.com/vuelidate/vuelidate  |   https://vuelidate.netlify.com   |   Vue.js的简单，轻量级基于模型的验证  
+35  |   match-sorter    |   https://github.com/kentcdodds/match-sorter#installation |   https://codesandbox.io/s/wyk856yo48 |   match-sorter：简单、可预期和可确定的最佳匹配数组排序
+36  |   bowser  |   https://github.com/lancedikson/bowser#overview  |   null    |  浏览器检测工具,甚至能为不是很现代的浏览器，也提供良好的功能检测机制。
+37  |   react-jsonschema-form   |   https://github.com/mozilla-services/react-jsonschema-form   |   https://mozilla-services.github.io/react-jsonschema-form/   |   一个 React 组件，使用 JSON Schema 构建表单
+38  |   uppy    |  https://github.com/transloadit/uppy/ |   https://uppy.io/examples/dashboard/ | Web浏览器的下一个开源文件上传器：Uppy，它提供文件预览、上传进度报告、网络摄像头支持等
