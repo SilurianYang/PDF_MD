@@ -40,3 +40,5 @@
 36  |   bowser  |   https://github.com/lancedikson/bowser#overview  |   null    |  浏览器检测工具,甚至能为不是很现代的浏览器，也提供良好的功能检测机制。
 37  |   react-jsonschema-form   |   https://github.com/mozilla-services/react-jsonschema-form   |   https://mozilla-services.github.io/react-jsonschema-form/   |   一个 React 组件，使用 JSON Schema 构建表单
 38  |   uppy    |  https://github.com/transloadit/uppy/ |   https://uppy.io/examples/dashboard/ | Web浏览器的下一个开源文件上传器：Uppy，它提供文件预览、上传进度报告、网络摄像头支持等
+39  |   negative-array  |   https://github.com/sindresorhus/negative-array  |   null    |   使用 ES2015 代理支持负数组索引
+40  |   Sortable    |   https://github.com/SortableJS/Sortable  |   https://sortablejs.github.io/Sortable/  |   可重新排序的拖放列表。用于触摸设备和现代浏览器(IE9+)，在列表之间拖动条目，定义自己的拖动控制柄，可用于 Angular, React 等。
