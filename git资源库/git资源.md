@@ -35,4 +35,5 @@
 31  |   eslint-plugin-unicorn   |   https://github.com/sindresorhus/eslint-plugin-unicorn   |   null    |   各种极致的 ESLint 规则
 32  |   cube.js |   https://github.com/statsbotco/cube.js   |   https://cube.dev/   |   开源分析框架,用于构建内部 BI 工具或客户仪表板等内容
 33  |   react-loadcon   |   https://github.com/foreseaz/react-loadcon   |   https://foreseaz.github.io/react-loadcon/   |   React组件来操作favicon，用于加载或进度显示在标题栏上
-34  |   vuelidate   |   https://github.com/vuelidate/vuelidate  |   https://vuelidate.netlify.com   |   Vue.js的简单，轻量级基于模型的验证  
+34  |   vuelidate   |   https://github.com/vuelidate/vuelidate  |   https://vuelidate.netlify.com   |   Vue.js的简单，轻量级基于模型的验证 
+34  |    
