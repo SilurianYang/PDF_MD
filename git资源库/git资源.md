@@ -42,3 +42,6 @@
 38  |   uppy    |  https://github.com/transloadit/uppy/ |   https://uppy.io/examples/dashboard/ | Web浏览器的下一个开源文件上传器：Uppy，它提供文件预览、上传进度报告、网络摄像头支持等
 39  |   negative-array  |   https://github.com/sindresorhus/negative-array  |   null    |   使用 ES2015 代理支持负数组索引
 40  |   Sortable    |   https://github.com/SortableJS/Sortable  |   https://sortablejs.github.io/Sortable/  |   可重新排序的拖放列表。用于触摸设备和现代浏览器(IE9+)，在列表之间拖动条目，定义自己的拖动控制柄，可用于 Angular, React 等。
+41  |   tippyjs |   https://github.com/atomiks/tippyjs  |   https://atomiks.github.io/tippyjs/  |   Tippy.js是一个高度可定制的工具提示和popover库，由Popper.js提供支持。它与IE11 +兼容，大约99％的桌​​面用户和97％的移动用户。它可用于创建简单的静态文本工具提示，或使用AJAX的复杂HTML弹出窗口。
+42  |   cash    |   https://github.com/kenwheeler/cash  |   null    |   现代浏览器的一个荒谬的小jQuery替代品 仅5kb
+43  |   css-only-chat   |   https://github.com/kkuchta/css-only-chat    |   null    |   不使用前端 JS 的'真正怪异'异步网络聊天
