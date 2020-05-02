@@ -10,12 +10,32 @@ module.exports={
     },
     module:{
         rules:[
+            // {
+            //     test:/\.js$/,
+            //     loader:'eslint-loader',
+            //     exclude:/node_modules/,
+            //     options:{
+            //         fix:true
+            //     }
+            // },
             {
                 test:/\.js$/,
-                loader:'eslint-loader',
+                loader:'babel-loader',
                 exclude:/node_modules/,
                 options:{
-                    fix:true
+                    presets:[[
+                        '@babel/preset-env',
+                        {
+                            useBuiltIns:'usage',
+                            corejs:{
+                                version: 3
+                            },
+                            targets:{
+                                chrome:'58',
+                                ie:'9'
+                            }
+                        }
+                    ]]
                 }
             },
             {
@@ -104,5 +124,6 @@ module.exports={
         compress:true,
         //端口号
         port:888,
+        hot:true
     }
 }

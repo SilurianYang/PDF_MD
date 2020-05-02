@@ -2,9 +2,13 @@ import './css/index.css';
 import './css/index.scss';
 import './fonts/iconfont.css';
 
-function add(x, y) {
-  return x + y;
-}
+import '@babel/polyfill';
 
-// eslint-disable-next-line
-console.log(add(5, 2));
+const promise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve();
+  }, 1000);
+});
+promise.then(() => {
+  console.log('执行了');
+});

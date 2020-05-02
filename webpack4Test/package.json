@@ -7,12 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=webpack.config.js",
     "build": "webpack ./src/index.js -o ./dist/build.js --mode=development",
-    "build:C": "webpack --config=webpack.config.js"
+    "build:p": "webpack ./src/index.js -o ./dist/build.js --mode=production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
     "css-loader": "^3.5.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -45,7 +50,7 @@
       "not op_mini all"
     ]
   },
-  "eslintConfig":{
+  "eslintConfig": {
     "extends": "airbnb-base"
   }
 }
