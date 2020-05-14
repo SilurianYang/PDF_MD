@@ -1,0 +1,23 @@
+body {
+    h1{
+        font-size: 60px;
+        color: #fff;
+    }
+    .box{
+        width: 200px;
+        height: 150px;
+        transform: rotate(45deg);
+    }
+    .box1{
+        background: url('../images/jsy.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .box2{
+        background: url('../images/jsy1.jpg') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .box3{
+        background: url('../images/jxy2.jpg') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}

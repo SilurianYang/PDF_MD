@@ -1,0 +1,93 @@
+{
+  "id": "1574440",
+  "name": "Ag-game-desktop",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10268396",
+      "name": "箭头2_左",
+      "font_class": "jiantou_zuo",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "4641126",
+      "name": "放大",
+      "font_class": "fangda",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "1236803",
+      "name": "头像",
+      "font_class": "02",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1770479",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "2155593",
+      "name": "视频",
+      "font_class": "shipin1",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "4182352",
+      "name": "AK-MN声音无_fill",
+      "font_class": "mn_shengyinwu_fill",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4182366",
+      "name": "AK-MN声音_fill",
+      "font_class": "mn_shengyin_fill",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6204091",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2132556",
+      "name": "统计",
+      "font_class": "tongji",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "5485651",
+      "name": "时间",
+      "font_class": "shijian1",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "2506193",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2036612",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    }
+  ]
+}
