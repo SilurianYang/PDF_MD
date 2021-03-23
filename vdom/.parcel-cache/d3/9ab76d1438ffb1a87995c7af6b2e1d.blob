@@ -1,0 +1,43 @@
+require('./style/base.scss');
+var _staticImagesGirlJpg = require('../static/images/girl.jpg');
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _staticImagesGirlJpgDefault = _parcelHelpers.interopDefault(_staticImagesGirlJpg);
+var _vdomCreateElemtJs = require('./vdom/createElemt.js');
+var _vdomCreateElemtJsDefault = _parcelHelpers.interopDefault(_vdomCreateElemtJs);
+var _vdomRenderJs = require('./vdom/render.js');
+var _vdomRenderJsDefault = _parcelHelpers.interopDefault(_vdomRenderJs);
+var _vdomMountJs = require('./vdom/mount.js');
+var _vdomMountJsDefault = _parcelHelpers.interopDefault(_vdomMountJs);
+var _vdomDiffJs = require('./vdom/diff.js');
+var _vdomDiffJsDefault = _parcelHelpers.interopDefault(_vdomDiffJs);
+let count = 0;
+const createApp = count => _vdomCreateElemtJsDefault.default('div', {
+  attrs: {
+    id: "hhyang",
+    name: "hhyang"
+  },
+  children: [_vdomCreateElemtJsDefault.default('div', {
+    children: [_vdomCreateElemtJsDefault.default('h1', {
+      children: [`我是你爸爸${count}`]
+    })]
+  }), _vdomCreateElemtJsDefault.default('input', {
+    attrs: {
+      type: "text"
+    }
+  }), String(count), _vdomCreateElemtJsDefault.default('img', {
+    attrs: {
+      src: _staticImagesGirlJpgDefault.default
+    }
+  })]
+});
+let oldApp = createApp(count);
+let $rootEl = _vdomMountJsDefault.default(_vdomRenderJsDefault.default(oldApp), document.getElementById('root'));
+// 挂载真实dom后并返回当前的dom;
+setInterval(() => {
+  count++;
+  let newApp = createApp(count);
+  let patch = _vdomDiffJsDefault.default(oldApp, newApp);
+  // 对比”数据“所有的不同之处，并返回一个patch方法处理dom
+  $rootEl = patch($rootEl);
+  oldApp = newApp;
+}, 2000);
