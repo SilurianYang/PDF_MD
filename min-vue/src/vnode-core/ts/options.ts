@@ -4,4 +4,3 @@ export type VNodeTS={
     children:string|Array<VNodeTS>,
     el?:null|Element
 }
-}

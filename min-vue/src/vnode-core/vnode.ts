@@ -62,15 +62,20 @@ export function mountElement(
 export function mount(
     vnode:VNodeTS,
     el:string|Element
-):(newVnode:VNodeTS)=>void{
+):(newVnode:VNodeTS)=>void|never{
     if(typeof el === 'string'){
-       el= document.querySelector(el);
+       const container= document.querySelector(el);
+       if(container==null){
+            throw new Error(`需要挂载的节点容器不存在，请检查：${el}`);
+       }
+       el=container;
     }
     const subTree=mountElement(vnode);;
     el.appendChild(subTree);
     let oldVnode=vnode;
     return (newVnode)=>{
-        diff(newVnode,oldVnode);
+        oldVnode=diff(newVnode,oldVnode);
+        console.log(oldVnode)
     }
 }
 
@@ -78,42 +83,71 @@ export function diff(
     newVnode:VNodeTS,
     oldVnode:VNodeTS
 ){
-    const {tag:oldTag,props:oldProps,el:oldEl,children:oldChildren}=oldVnode;
-    const {tag:newTag,props:newProps,el:newEl,children:newChildren}=newVnode;
+    const {tag:oldTag,props:oldProps,children:oldChildren}=oldVnode;
+    const {tag:newTag,props:newProps,children:newChildren}=newVnode;
+
+    const el=newVnode.el=oldVnode.el as Element;
 
     if(oldTag!==newTag){        //节点完全不一样，直接替换
         const newTree=mountElement(newVnode);
-        oldEl.replaceWith(newTree);
+        el.replaceWith(newTree);
     }else{  // tag 相等需要对比 props 和 children
         for(const [newKey,newValue] of Object.entries(newProps)){
             if(!Reflect.has(oldVnode,newKey)){      //没有新属性，需要添加
-                setProps(newKey,newValue,oldEl);
+                setProps(newKey,newValue,el);
             }
         }
         for(const [oldKey,oldValue] of Object.entries(oldProps)){
             if(!Reflect.has(newVnode,oldKey)){
-                removeProps(oldKey,oldValue,oldEl);
+                removeProps(oldKey,oldValue,el);
+            }
+        }
+
+        //  '1' vs  '2'
+
+        if(typeof newChildren === 'string' && typeof oldChildren === 'string'){       
+            el.innerHTML=newChildren;
+        }
+
+
+        //  '1' vs  [{tag: "div"}]
+
+        if(typeof newChildren === 'string' && Array.isArray(newChildren)){       
+            // TODO
+            //这里还需把之前的事件移除
+            const childEl=document.createTextNode(newChildren);
+            el.appendChild(childEl);
+        }
+
+        // [{tag: "div"}] vs '1'
+
+        if(Array.isArray(newChildren) && typeof oldChildren === 'string'){
+            newChildren.forEach(vnode=>{
+                const childEl=mountElement(vnode);
+                el.appendChild(childEl);
+            })
+        }
+
+
+        // [{tag: "div"}] vs [{tag: "p"}]
+
+        if(Array.isArray(newChildren) && Array.isArray(oldChildren)){
+            const diffMax=Math.min(newChildren.length,oldChildren.length);
+            for(let i=0;i<diffMax;i++){
+                diff(newChildren[i],oldChildren[i]);
+            }
+            if(newChildren.length>oldChildren.length){
+            let diffChild=newChildren.slice(diffMax);
+            diffChild.forEach(vnode=>{
+                mountElement(vnode);
+            })
+            }else{
+                //[{tag: "div"}] vs [{tag: "p"},{tag: "span"}]
+                oldChildren.slice(1).forEach(vnode=>{
+                    el.removeChild(vnode.el as Element)
+                })
             }
         }
     }
-
-    if(typeof newChildren === 'string' && typeof oldChildren !== 'string' ){       
-        // TODO
-        //这里还需把之前的事件移除
-        const childEl=document.createTextNode(newChildren);
-        oldEl.appendChild(childEl);
-    }
-
-    if(Array.isArray(newChildren) && typeof oldChildren === 'string'){
-        newChildren.forEach(vnode=>{
-            const childEl=mountElement(vnode);
-            oldEl.appendChild(childEl);
-        })
-    }
-
-    if(Array.isArray(newChildren) && Array.isArray(oldChildren)){
-        oldChildren.forEach(vnode=>{
-            diff(vnode);
-        })
-    }
+    return newVnode;
 }

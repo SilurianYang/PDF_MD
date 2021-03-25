@@ -1,5 +1,5 @@
-import { h } from "./h";
-import { mount } from "./vnode";
+import { h } from "./vnode-core/h";
+import { mount } from "./vnode-core/vnode";
 
 const vnode= h('div',{
     id:'firstBox',
@@ -15,11 +15,12 @@ const vnode= h('div',{
     ])
 ]);
 
-const vnode2= h('p',{
-    id:'firstBox',
+const vnode2= h('div',{
     class:'box'
 },[
-    h('div',{},[
+    h('div',{
+        class:'er_div'
+    },[
         h('p',{
             onclick:()=>{
                 alert('二次更新')
@@ -28,11 +29,13 @@ const vnode2= h('p',{
     ])
 ]);
 
-const patch=mount(vnode,document.querySelector('#app'));
+window.h=h;
+
+const patch=window.patch =mount(vnode,document.querySelector('#app') as Element);
 
 
 console.log(vnode)
 
-// setTimeout(()=>{
-//     patch(vnode2);
-// },3000)
+setTimeout(()=>{
+    patch(vnode2);
+},3000)
